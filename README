@@ -1,0 +1,19 @@
+
+cd frontent
+mvn clean package
+mvn spring-boot:run
+
+
+cd backend
+mvn clean package
+mvn spring-boot:run
+
+Connect to the Frontend app
+- http://localhost:8080/frontend
+
+modify the ./frontend/src/main/resources/application.properties and enter the client secret: 
+spring.security.oauth2.client.registration.okta.client-secret=<ask-sacha>
+
+http://localhost:8080/frontend
+http://localhost:8080/frontend/call-backend
+
